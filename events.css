@@ -1,0 +1,620 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+
+/* =========================
+   GENERAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at 15% 15%, rgba(43, 217, 237, 0.07), transparent 28%),
+        radial-gradient(circle at 85% 35%, rgba(139, 53, 209, 0.08), transparent 30%),
+        #070d18;
+
+    color: #f8f9ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.wrap {
+    width: min(1500px, calc(100% - 64px));
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    min-height: 76px;
+    padding: 0 4.5%;
+    background: #0c101b;
+    border-bottom: 1px solid #29394c;
+    position: relative;
+    z-index: 100;
+}
+
+.header-inner {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    width: 215px;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    color: #c1cbd8;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.25s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #48d5e6;
+}
+
+.nav a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #a9d63d;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+}
+
+.book-link {
+    background: #b9ec35;
+    color: #101014;
+    padding: 11px 19px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 800;
+    white-space: nowrap;
+    transition: 0.25s ease;
+}
+
+.book-link:hover {
+    background: #2bd9ed;
+    transform: translateY(-2px);
+}
+
+.menu {
+    display: none;
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   PAGE INTRO
+========================= */
+
+.page-top {
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+.page-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.page-intro {
+    color: #c1cbd8;
+    font-size: 15px;
+}
+
+
+/* =========================
+   EVENTS SECTION
+========================= */
+
+.section {
+    padding-bottom: 55px;
+}
+
+.event-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 30px;
+    min-height: 340px;
+    padding: 30px;
+    margin-bottom: 38px;
+
+    background: linear-gradient(135deg, #101d30, #0b1422);
+    border: 1px solid #344357;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.event-feature > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pill {
+    display: inline-block;
+    padding: 6px 13px;
+    background: rgba(185, 236, 53, 0.13);
+    border: 1px solid #b9ec35;
+    border-radius: 30px;
+    color: #b9ec35;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.event-feature h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 43px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1;
+    margin-bottom: 17px;
+}
+
+.event-feature p {
+    color: #c1cbd8;
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+/* =========================
+   MAIN EVENT PHOTO
+   FIFA 27
+========================= */
+
+.event-art {
+    min-height: 280px;
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid transparent;
+
+    background:
+        linear-gradient(#0b1422, #0b1422) padding-box,
+        linear-gradient(120deg, #b9ec35, #2bd9ed, #ef35ac, #8b35d1) border-box;
+
+    background-image:
+        linear-gradient(rgba(7, 13, 24, 0.05), rgba(7, 13, 24, 0.2)),
+        url("pic1.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 17px;
+    border: 1px solid #344357;
+    border-radius: 7px;
+    background: #142237;
+    color: #f8f9ff;
+    font-size: 12px;
+    font-weight: 800;
+    transition: 0.25s ease;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    border-color: #2bd9ed;
+    color: #2bd9ed;
+    transform: translateY(-2px);
+}
+
+.btn-green {
+    background: #b9ec35;
+    border-color: #b9ec35;
+    color: #101014;
+}
+
+.btn-green:hover {
+    background: #2bd9ed;
+    border-color: #2bd9ed;
+    color: #101014;
+}
+
+
+/* =========================
+   MORE EVENTS
+========================= */
+
+.section > h2 {
+    font-family: 'Nunito Sans', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 900;
+    color: #f8f9ff;
+    margin-bottom: 15px !important;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.event-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 18px;
+
+    background: #0b1422;
+    border: 1px solid #344357;
+    border-radius: 11px;
+    transition: 0.25s ease;
+}
+
+.event-row:hover {
+    border-color: #2bd9ed;
+    transform: translateY(-2px);
+}
+
+.event-row > div:nth-child(2) {
+    flex: 1;
+}
+
+.event-row h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.event-row p {
+    color: #9ba8b8;
+    font-size: 12px;
+}
+
+
+/* =========================
+   EVENT THUMBNAILS
+========================= */
+
+.event-thumb {
+    width: 105px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #344357;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Valorant Showdown */
+
+.event-row:nth-child(1) .event-thumb {
+    background-image: url("valorant.webp");
+}
+
+/* Racing League */
+
+.event-row:nth-child(2) .event-thumb {
+    background-image: url("racinglounge.webp");
+}
+
+/* Community Game Night */
+
+.event-row:nth-child(3) .event-thumb {
+    background-image: url("gamenight.webp");
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    border-top: 1px solid #29394c;
+    margin-top: 30px;
+    padding: 35px 0;
+    background: #060c15;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-inner > div:first-child img {
+    width: 155px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-inner > div:first-child p {
+    font-size: 12px;
+    color: #9ba8b8;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 12px;
+    color: #9ba8b8;
+    transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #b9ec35;
+}
+
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .header {
+        padding: 0 3%;
+    }
+
+    .logo {
+        width: 175px;
+    }
+
+    .nav {
+        gap: 17px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .book-link {
+        padding: 10px 13px;
+        font-size: 11px;
+    }
+
+    .event-feature {
+        gap: 20px;
+        padding: 23px;
+    }
+
+    .event-feature h2 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 760px) {
+
+    .wrap {
+        width: calc(100% - 36px);
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+        min-height: 70px;
+    }
+
+    .logo {
+        width: 155px;
+    }
+
+    .menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 18px 0;
+        order: 4;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .nav a.active::after {
+        bottom: -5px;
+    }
+
+    .book-link {
+        font-size: 10px;
+        padding: 9px 11px;
+    }
+
+    .page-top {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+
+    .page-title {
+        font-size: 42px;
+    }
+
+    .page-intro {
+        font-size: 13px;
+    }
+
+    .event-feature {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 22px;
+    }
+
+    .event-feature h2 {
+        font-size: 35px;
+    }
+
+    .event-art {
+        min-height: 230px;
+    }
+
+    .event-row {
+        gap: 13px;
+        padding: 12px;
+    }
+
+    .event-thumb {
+        width: 85px;
+        height: 70px;
+    }
+
+    .event-row h3 {
+        font-size: 14px;
+    }
+
+    .event-row p {
+        font-size: 11px;
+    }
+
+    .event-row .btn {
+        padding: 9px 10px;
+        font-size: 10px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+    .wrap {
+        width: calc(100% - 28px);
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .book-link {
+        font-size: 9px;
+        padding: 8px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .event-feature {
+        padding: 16px;
+    }
+
+    .event-feature h2 {
+        font-size: 30px;
+    }
+
+    .event-art {
+        min-height: 190px;
+    }
+
+    .event-row {
+        flex-wrap: wrap;
+    }
+
+    .event-row > div:nth-child(2) {
+        min-width: 120px;
+    }
+
+    .event-row .btn {
+        width: 100%;
+    }
+
+    .event-thumb {
+        width: 75px;
+        height: 65px;
+    }
+
+    .footer-links {
+        gap: 12px;
+    }
+}

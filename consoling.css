@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&display=swap');
+
+:root {
+    --bg: #070d18;
+    --bg2: #0b1422;
+    --panel: #0c1726;
+    --line: #344357;
+    --muted: #c1cbd8;
+    --white: #f8f9ff;
+    --green: #b9ec35;
+    --cyan: #2bd9ed;
+    --pink: #ef35ac;
+    --purple: #8b35d1;
+    --yellow: #e9ed36;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(ellipse at 88% 22%, #35104455, transparent 28%),
+        radial-gradient(ellipse at 4% 55%, #07354a33, transparent 28%),
+        var(--bg);
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+.wrap {
+    width: min(1500px, calc(100% - 64px));
+    margin: auto;
+}
+
+.header {
+    min-height: 76px;
+    padding: 0 4.5%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    background: #0c101b;
+    border-bottom: 1px solid #ffffff0c;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    width: 215px;
+    object-fit: contain;
+    object-position: left center;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.nav a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #e5e5eb;
+    position: relative;
+    padding: 12px 0;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #48d5e6;
+}
+
+.nav a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #a9d63d;
+}
+
+.book-link {
+    border: 1.5px solid #a6cf3c;
+    border-radius: 13px;
+    padding: 9px 14px;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.book-link:hover {
+    background: #a6cf3c;
+    color: #10151e;
+}
+
+.menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.page-top {
+    padding: 27px 0 20px;
+    min-height: 142px;
+    position: relative;
+}
+
+.page-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 0.95;
+    letter-spacing: 0.5px;
+}
+
+.page-intro {
+    font-size: 15px;
+    color: #bfc2cc;
+    margin-top: 18px;
+    max-width: 580px;
+}
+
+
+
+/* =========================
+   CONSOLE GAMING PAGE
+========================= */
+
+/* PAGE TOP */
+
+.page-top {
+    padding: 27px 0 20px;
+    min-height: 142px;
+    position: relative;
+}
+
+.crumb {
+    font-size: 15px;
+    color: #aeb9c8;
+    margin-bottom: 15px;
+
+}
+
+.crumb span {
+    color: var(--green);
+    margin: 0 7px;
+}
+
+.page-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: .96;
+    letter-spacing: -1px;
+    text-transform: none;
+    text-transform: uppercase;
+
+}
+
+.page-intro {
+    font-size: 15px;
+    color: #c0cad7;
+    margin-top: 7px;
+    max-width: 480px;
+}
+
+.page-top.image-top {
+    min-height: 185px;
+}
+
+.page-top.image-top:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: -8px;
+    width: 48%;
+    z-index: -1;
+    background:
+        linear-gradient(90deg, var(--bg), transparent 35%),
+        url('consoling(1).png') center/cover;
+    opacity: .85;
+}
+
+
+/* =========================
+   CONSOLE SPECS
+========================= */
+
+.specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #344357;
+    border-radius: 12px;
+    background: #0a1422;
+    margin: 8px 0 22px;
+    overflow: hidden;
+}
+
+.spec {
+    padding: 12px 8px;
+    text-align: center;
+    border-right: 1px solid #28394c;
+    font-size: 15px;
+    color: #e3eaf2;
+}
+
+.spec:last-child {
+    border: 0;
+}
+
+.spec strong {
+    display: block;
+    font-size: 20px;
+    color: var(--cyan);
+    margin-bottom: 3px;
+}
+
+.spec:nth-child(3) strong {
+    color: var(--pink);
+}
+
+.spec:nth-child(4) strong {
+    color: var(--green);
+}
+
+
+/* =========================
+   CONSOLE DETAILS
+========================= */
+
+.section {
+    padding: 12px 0 38px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    align-items: center;
+}
+
+.details h2 {
+    font-family: 'Nunito Sans', Inter, sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    font-style: italic;
+
+}
+
+.checks {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    font-style: italic;
+
+}
+
+.checks li {
+    font-size: 15px;
+    color: #e0e6ef;
+}
+
+.checks li:before {
+    content: "✓";
+    color: var(--yellow);
+    font-size: 16px;
+    font-weight: 900;
+    margin-right: 9px;
+}
+
+
+/* =========================
+   CONSOLE PHOTO
+========================= */
+
+.ref-photo {
+    height: 280px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background:
+        linear-gradient(120deg, #b9ec35, #2bd9ed, #ef35ac, #8b35d1) border-box;
+    position: relative;
+    isolation: isolate;
+}
+
+.ref-photo::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: 10px;
+    background: url('game.webp') center/cover;
+    z-index: -1;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 760px) {
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .page-top.image-top:after {
+        width: 100%;
+        opacity: .25;
+    }
+
+    .specs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .spec:nth-child(2) {
+        border-right: 0;
+    }
+
+    .spec:nth-child(-n+2) {
+        border-bottom: 1px solid #28394c;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .ref-photo {
+        height: 180px;
+    }
+}
+
+.footer {
+    border-top: 1px solid #29394c;
+    margin-top: 45px;
+    padding: 35px 0;
+    background: #060c15;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer img {
+    width: 155px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #aebdce;
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-links a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
+@media (max-width: 1000px) {
+
+    .nav {
+        gap: 18px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .page-title {
+        font-size: 30px;
+    }
+
+    .page-intro {
+        font-size: 13px;
+    }
+
+    .zone-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .zone-card {
+        height: 300px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .wrap {
+        width: calc(100% - 34px);
+    }
+
+    .header {
+        height: 70px;
+        min-height: 70px;
+        flex-wrap: wrap;
+        padding: 12px 5%;
+    }
+
+    .logo {
+        width: 150px;
+        height: 45px;
+    }
+
+    .menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .book-link {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 69px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #081321;
+        padding: 15px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .page-top {
+        padding: 25px 0 20px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .page-intro {
+        font-size: 14px;
+    }
+
+    .zone-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .zone-card {
+        height: 220px;
+        padding: 18px;
+    }
+
+    .zone-card h3 {
+        font-size: 20px;
+    }
+
+    .zone-card p {
+        font-size: 13px;
+    }
+
+    .footer {
+        padding: 28px 0;
+    }
+
+    .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .footer img {
+        width: 145px;
+    }
+
+    .footer p {
+        font-size: 11px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+}

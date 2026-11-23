@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BYTES Gaming Lounge Beirut</title>
+
+    <link rel="stylesheet" href="homepage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="homepage.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <img src="nobg.png" alt="BYTES Gaming Logo">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="zones.html" class="nav-link">Gaming Zones</a>
+            <a href="memberships.html" class="nav-link">Memberships</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+
+        <a href="book-session.html" class="header-book">
+            <span>🎮</span> Book a Session
+        </a>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-decoration decoration-one"></div>
+                <div class="hero-decoration decoration-two"></div>
+                <h1>
+                    BEIRUT'S<br>
+                    <span class="green-text">GAMING</span>
+                    <span class="pink-text">LOUNGE</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Play. Compete. Hang Out.
+                </p>
+                <div class="hero-buttons">
+                    <a href="book-session.html" class="btn btn-primary">
+                        🎮 Book a Session <span>→</span>
+                    </a>
+                    <a href="zones.html" class="btn btn-secondary">
+                        Our Gaming Zones <span>→</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="heroimage.png" alt="BYTES gaming lounge interior">
+                <div class="image-overlay"></div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <span class="feature-icon cyan">💻</span>
+                <p>High-Performance PCs</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon pink">🎮</span>
+                <p>Console Gaming</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon cyan">👥</span>
+                <p>Multiplayer & Tournaments</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon green">☕</span>
+                <p>Comfort & Lounge Area</p>
+            </div>
+        </section>
+        <section class="zones-section" id="zones">
+            <div class="section-heading">
+                <div class="heading-left">
+                    <h2>Game Zones</h2>
+                    <span class="pink-scribble"></span>
+                </div>
+                <a href="zones.html" class="explore-link" id="exploreBtn">
+                    Explore All <span>→</span>
+                </a>
+            </div>
+            <div class="zones-container">
+                <button class="zone-card pc-card" onclick="location.href='#pc-gaming'">
+                    <div class="zone-info">
+                        <span class="zone-icon cyan">⌨️</span>
+                        <h3>PC Gaming</h3>
+                        <p>High-spec setups<br>for every game.</p>
+                    </div>
+                </button>
+                <button class="zone-card console-card" onclick="location.href='#console-gaming'">
+                    <div class="zone-info">
+                        <span class="zone-icon pink">🎮</span>
+                        <h3>Console Gaming</h3>
+                        <p>Play your favorite<br>titles on PS5 & Xbox.</p>
+                    </div>
+                </button>
+                <button class="zone-card racing-card" onclick="location.href='#racing-zone'">
+                    <div class="zone-info">
+                        <span class="zone-icon green">◎</span>
+                        <h3>Racing Zone</h3>
+                        <p>Immerse in racing<br>with pro setups.</p>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <div><img src="nobg.png" alt="BYTES">
+                <p>© 2026 BYTES Gaming Lounge · Beirut, Lebanon</p>
+            </div>
+            <div class="footer-links"><a href="zones.html">Gaming Zones</a><a
+                    href="memberships.html">Memberships</a><a href="gal.html">Gallery</a><a href="contact.html">Contact</a></div>
+        </div>
+    </footer>
+</body>
+</html>
