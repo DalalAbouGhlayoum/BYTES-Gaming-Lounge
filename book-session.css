@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&display=swap');
 
-/* ==============================
-   ROOT VARIABLES
-============================== */
-
 :root {
     --bg: #070d18;
     --bg2: #0b1422;
@@ -17,10 +13,6 @@
     --purple: #8b35d1;
     --yellow: #e9ed36;
 }
-
-/* ==============================
-   GENERAL SETTINGS
-============================== */
 
 * {
     box-sizing: border-box;
@@ -62,9 +54,6 @@ textarea {
     margin: auto;
 }
 
-/* ==============================
-   HEADER
-============================== */
 
 .header {
     min-height: 76px;
@@ -149,10 +138,6 @@ textarea {
     cursor: pointer;
 }
 
-/* ==============================
-   PAGE TITLE
-============================== */
-
 .page-top {
     padding: 27px 0 20px;
     min-height: 142px;
@@ -176,9 +161,6 @@ textarea {
     max-width: 580px;
 }
 
-/* ==============================
-   BOOKING GRID
-============================== */
 
 .booking-grid {
     display: grid;
@@ -189,9 +171,6 @@ textarea {
     padding-left: 180px;
 }
 
-/* ==============================
-   BOOKING FORM PANEL
-============================== */
 
 .form-panel {
     border: 1px solid #3e536c;
@@ -200,10 +179,6 @@ textarea {
     background: #0b1524;
     box-shadow: 0 0 20px #00000020;
 }
-
-/* ==============================
-   ZONE TABS
-============================== */
 
 .zone-tabs {
     display: flex;
@@ -239,9 +214,6 @@ textarea {
     color: #09111a;
 }
 
-/* ==============================
-   FORM GRID
-============================== */
 
 .form-grid {
     display: grid;
@@ -259,19 +231,11 @@ textarea {
     grid-column: 1 / -1;
 }
 
-/* ==============================
-   FORM LABELS
-============================== */
-
 .field label {
     font-size: 14px;
     color: #dce4ee;
     font-weight: 600;
 }
-
-/* ==============================
-   FORM INPUTS
-============================== */
 
 .field input,
 .field select,
@@ -310,9 +274,6 @@ textarea {
     resize: vertical;
 }
 
-/* ==============================
-   BOOKING PHOTO
-============================== */
 .booking-photo {
     transform: translateX(100px);
     height: 420px;
@@ -355,9 +316,6 @@ textarea {
     color: white;
     text-align: center;
 }
-/* ==============================
-   BUTTONS
-============================== */
 
 .btn {
     display: inline-flex;
@@ -399,9 +357,6 @@ textarea {
     margin-top: 10px;
 }
 
-/* ==============================
-   BOOKING NOTICE
-============================== */
 
 .notice {
     display: none;
@@ -414,9 +369,6 @@ textarea {
     display: block;
 }
 
-/* ==============================
-   FOOTER
-============================== */
 
 .footer {
     border-top: 1px solid #29394c;
@@ -462,10 +414,6 @@ textarea {
     color: var(--green);
 }
 
-/* ==============================
-   TABLET RESPONSIVE
-============================== */
-
 @media (max-width: 1000px) {
 
     .nav {
@@ -499,9 +447,6 @@ textarea {
 
 }
 
-/* ==============================
-   MOBILE RESPONSIVE
-============================== */
 
 @media (max-width: 760px) {
 

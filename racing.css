@@ -15,8 +15,6 @@
     --yellow: #e9ed36;
 }
 
-/* GENERAL */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -57,7 +55,6 @@ textarea {
     margin: auto;
 }
 
-/* HEADER */
 
 .header {
     min-height: 76px;
@@ -276,7 +273,6 @@ textarea {
     margin-right: 9px;
 }
 
-/* PHOTO WITH MULTICOLOR BORDER */
 
 .ref-photo {
     width: 100%;
@@ -307,7 +303,6 @@ textarea {
     z-index: -1;
 }
 
-/* FOOTER */
 
 .footer {
     border-top: 1px solid #29394c;
@@ -353,7 +348,6 @@ textarea {
     color: var(--green);
 }
 
-/* TABLET */
 
 @media (max-width: 1000px) {
 
@@ -374,7 +368,6 @@ textarea {
     }
 }
 
-/* MOBILE */
 
 @media (max-width: 760px) {
 

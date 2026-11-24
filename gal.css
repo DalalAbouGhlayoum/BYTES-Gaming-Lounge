@@ -1,14 +1,6 @@
-
-/* ==============================
-   FONTS
-============================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap');
 
 
-/* ==============================
-   GENERAL SETTINGS
-============================== */
 
 :root {
     --green: #4DFF42;
@@ -58,9 +50,6 @@ button {
 }
 
 
-/* ==============================
-   HEADER - BYTES DEFAULT
-============================== */
 
 .header {
     min-height: 76px;
@@ -143,9 +132,6 @@ button {
 }
 
 
-/* ==============================
-   PAGE TOP
-============================== */
 
 .page-top {
     padding-top: 65px;
@@ -177,20 +163,11 @@ button {
     margin-top: 18px;
 }
 
-
-/* ==============================
-   SECTION
-============================== */
-
 .section {
     padding-top: 25px;
     padding-bottom: 65px;
 }
 
-
-/* ==============================
-   FILTERS - ORIGINAL GALLERY
-============================== */
 
 .filters,
 .gallery-filters {
@@ -227,9 +204,6 @@ button {
 }
 
 
-/* ==============================
-   ORIGINAL GALLERY GRID
-============================== */
 
 .gallery {
     display: grid;
@@ -278,10 +252,6 @@ button {
 }
 
 
-/* ==============================
-   GALLERY HERO
-============================== */
-
 .gallery-hero {
     min-height: 470px;
     display: flex;
@@ -289,7 +259,7 @@ button {
 
     background:
         linear-gradient(90deg, rgba(5, 10, 19, 0.96), rgba(5, 10, 19, 0.55)),
-        url("images/gallery-hero.jpg") center/cover no-repeat;
+        url("nobg.png") center/cover no-repeat;
 
     border-top: 1px solid #29394c;
     border-bottom: 1px solid #29394c;
@@ -343,11 +313,6 @@ button {
     transform: translateY(-3px);
 }
 
-
-/* ==============================
-   GALLERY INTRO
-============================== */
-
 .gallery-intro {
     text-align: center;
     padding-top: 85px;
@@ -373,10 +338,6 @@ button {
     line-height: 1.9;
 }
 
-
-/* ==============================
-   MAIN PHOTO GRID
-============================== */
 
 .gallery-section {
     padding-top: 25px;
@@ -417,7 +378,6 @@ button {
 }
 
 
-/* PHOTO OVERLAY */
 
 .gallery-overlay {
     position: absolute;
@@ -459,10 +419,6 @@ button {
     text-transform: uppercase;
 }
 
-
-/* ==============================
-   CTA SECTION
-============================== */
 
 .gallery-cta {
     text-align: center;
@@ -514,9 +470,6 @@ button {
 }
 
 
-/* ==============================
-   FOOTER - BYTES DEFAULT
-============================== */
 
 .footer {
     width: 100%;
@@ -565,9 +518,6 @@ button {
 }
 
 
-/* ==============================
-   RESPONSIVE
-============================== */
 
 @media (max-width: 1100px) {
 

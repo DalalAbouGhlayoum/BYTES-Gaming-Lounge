@@ -1,12 +1,5 @@
-/* ==============================
-   FONTS
-============================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&display=swap');
 
-
-/* ==============================
-   GENERAL SETTINGS
-============================== */
 :root {
     --bg: #070d18;
     --bg2: #0b1422;
@@ -62,10 +55,6 @@ textarea {
     margin: auto;
 }
 
-
-/* ==============================
-   HEADER
-============================== */
 .header {
     min-height: 76px;
     padding: 0 4.5%;
@@ -148,9 +137,6 @@ textarea {
 }
 
 
-/* ==============================
-   PAGE TITLE
-============================== */
 .page-top {
     padding: 38px 0 28px;
     min-height: 175px;
@@ -175,10 +161,6 @@ textarea {
     max-width: 600px;
 }
 
-
-/* ==============================
-   ABOUT SECTION
-============================== */
 .section {
     padding: 15px 0 55px;
 }
@@ -191,7 +173,6 @@ textarea {
     margin-bottom: 40px;
 }
 
-/* ABOUT IMAGE */
 .about-photo {
     height: 370px;
     border-radius: 16px;
@@ -224,7 +205,6 @@ textarea {
     pointer-events: none;
 }
 
-/* ABOUT TEXT */
 .about-layout h2 {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 30px !important;
@@ -241,9 +221,6 @@ textarea {
 }
 
 
-/* ==============================
-   MISSION / COMMUNITY / VISION
-============================== */
 .mission-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -314,9 +291,6 @@ textarea {
 }
 
 
-/* ==============================
-   FOOTER
-============================== */
 .footer {
     border-top: 1px solid #29394c;
     margin-top: 30px;
@@ -353,9 +327,6 @@ textarea {
 }
 
 
-/* ==============================
-   RESPONSIVE DESIGN
-============================== */
 @media (max-width: 1000px) {
 
     .nav {
@@ -394,7 +365,6 @@ textarea {
         width: calc(100% - 34px);
     }
 
-    /* HEADER */
     .header {
         min-height: 70px;
         padding: 0 17px;
@@ -436,7 +406,6 @@ textarea {
         display: none;
     }
 
-    /* PAGE TITLE */
     .page-top {
         padding: 30px 0 22px;
         min-height: 135px;
@@ -450,7 +419,6 @@ textarea {
         font-size: 14px;
     }
 
-    /* ABOUT */
     .section {
         padding: 10px 0 35px;
     }
@@ -473,7 +441,6 @@ textarea {
         font-size: 14px;
     }
 
-    /* MISSION CARDS */
     .mission-grid {
         grid-template-columns: 1fr;
         gap: 14px;
@@ -496,7 +463,6 @@ textarea {
         font-size: 13px;
     }
 
-    /* FOOTER */
     .footer-inner {
         align-items: flex-start;
         flex-direction: column;

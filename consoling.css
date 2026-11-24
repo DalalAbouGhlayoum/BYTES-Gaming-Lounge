@@ -161,12 +161,6 @@ textarea {
 
 
 
-/* =========================
-   CONSOLE GAMING PAGE
-========================= */
-
-/* PAGE TOP */
-
 .page-top {
     padding: 27px 0 20px;
     min-height: 142px;
@@ -222,11 +216,6 @@ textarea {
     opacity: .85;
 }
 
-
-/* =========================
-   CONSOLE SPECS
-========================= */
-
 .specs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -263,11 +252,6 @@ textarea {
 .spec:nth-child(4) strong {
     color: var(--green);
 }
-
-
-/* =========================
-   CONSOLE DETAILS
-========================= */
 
 .section {
     padding: 12px 0 38px;
@@ -310,11 +294,6 @@ textarea {
     margin-right: 9px;
 }
 
-
-/* =========================
-   CONSOLE PHOTO
-========================= */
-
 .ref-photo {
     height: 280px;
     border: 2px solid transparent;
@@ -333,10 +312,6 @@ textarea {
     background: url('game.webp') center/cover;
     z-index: -1;
 }
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
 
 @media (max-width: 760px) {
 

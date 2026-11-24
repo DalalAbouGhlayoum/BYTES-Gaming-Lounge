@@ -345,28 +345,21 @@ button {
     background-repeat: no-repeat;
 }
 
-/* Valorant Showdown */
 
 .event-row:nth-child(1) .event-thumb {
     background-image: url("valorant.webp");
 }
 
-/* Racing League */
 
 .event-row:nth-child(2) .event-thumb {
     background-image: url("racinglounge.webp");
 }
 
-/* Community Game Night */
 
 .event-row:nth-child(3) .event-thumb {
     background-image: url("gamenight.webp");
 }
 
-
-/* =========================
-   FOOTER
-========================= */
 
 .footer {
     border-top: 1px solid #29394c;
@@ -412,9 +405,6 @@ button {
 }
 
 
-/* =========================
-   TABLET RESPONSIVE
-========================= */
 
 @media (max-width: 1000px) {
 
@@ -449,10 +439,6 @@ button {
     }
 }
 
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
 
 @media (max-width: 760px) {
 
@@ -561,10 +547,6 @@ button {
     }
 }
 
-
-/* =========================
-   SMALL MOBILE
-========================= */
 
 @media (max-width: 450px) {
 

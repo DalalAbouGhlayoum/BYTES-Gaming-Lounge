@@ -218,10 +218,6 @@ textarea {
 }
 
 
-/* =========================
-   PC GAMING SPECS
-========================= */
-
 .specs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -260,9 +256,6 @@ textarea {
 }
 
 
-/* =========================
-   ZONE DETAILS
-========================= */
 
 .section {
     padding: 12px 0 38px;
@@ -306,9 +299,6 @@ textarea {
 }
 
 
-/* =========================
-   PC GAMING PHOTO
-========================= */
 
 .ref-photo {
     height: 280px;
@@ -328,10 +318,6 @@ textarea {
     background: url('pc.jpg') center/cover;
     z-index: -1;
 }
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
 
 @media (max-width: 760px) {
 
